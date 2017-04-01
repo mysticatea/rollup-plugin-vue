@@ -1,5 +1,4 @@
 import { templateJs, moduleJs, renderJs } from './injections'
-import { coffee } from './script/index'
 
 export default {
     // Style compilation options.
@@ -56,15 +55,6 @@ export default {
         generateScopedName: '[name]__[local]'
     },
 
-    // Config for node-sass.
-    scss: {},
-
-    // Config for stylus.
-    stylus: {},
-
-    // Config for pug compiler.
-    pug: {},
-
     // Custom injectors.
     inject: {
         template: {
@@ -84,8 +74,5 @@ export default {
     },
 
     // script languages.
-    script: {
-        coffee,
-        coffeescript: coffee
-    }
+    script: {}
 }

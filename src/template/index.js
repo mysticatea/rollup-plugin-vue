@@ -1,10 +1,7 @@
 import compileHTML from './html'
-import compilePug from './pug'
 
 const compilers = {
-    html: compileHTML,
-    pug: compilePug,
-    jade: compilePug
+    html: compileHTML
 }
 
 export default async function (template, extras, options) {
