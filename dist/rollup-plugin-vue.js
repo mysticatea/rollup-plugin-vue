@@ -606,9 +606,12 @@ function vue() {var opts = arguments.length > 0 && arguments[0] !== undefined ? 
 
                                     vueTransform(source, id, config));case 6:_ref = _context.sent;code = _ref.code;css = _ref.css;map = _ref.map;
 
+                                if (css && typeof config.eachCss === 'function') {
+                                    config.eachCss(css);
+                                }
                                 styles[id] = css;return _context.abrupt('return',
 
-                                { code: code, map: map });case 12:case 'end':return _context.stop();}}}, _callee, _this);}))();
+                                { code: code, map: map });case 13:case 'end':return _context.stop();}}}, _callee, _this);}))();
         },
 
         ongenerate: function ongenerate() {
