@@ -65,7 +65,7 @@ export default function vue (opts = {}) {
             const { code, css, map } = await vueTransform(source, id, config)
 
             if (typeof config.eachCss === 'function') {
-                config.eachCss(css)
+                config.eachCss(css, id)
             }
             styles[id] = css
 

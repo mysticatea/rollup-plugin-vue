@@ -611,7 +611,7 @@ function vue() {var opts = arguments.length > 0 && arguments[0] !== undefined ? 
                                     vueTransform(source, id, config));case 6:_ref = _context.sent;code = _ref.code;css = _ref.css;map = _ref.map;
 
                                 if (typeof config.eachCss === 'function') {
-                                    config.eachCss(css);
+                                    config.eachCss(css, id);
                                 }
                                 styles[id] = css;return _context.abrupt('return',
 
